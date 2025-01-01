@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: rgb(249, 244, 238);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgb(251, 222, 184);
+}
+
+.title {
+  margin: 30px auto 0;
+}
+
+.input {
+  margin: 30px 10px 0;
+  height: 40px;
+  padding: 10px;
+}
+
+.additions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px;
+  max-height: 150px;
+  background-color: white;
+}
+
+.additions-list li {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.additions-list li:hover {
+  background-color: rgb(250, 214, 167);
+}
+
+.subtitle {
+  margin: 0;
+  padding: 10px;
+}
+
+.repos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.repo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
