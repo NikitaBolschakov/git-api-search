@@ -20,7 +20,6 @@ async function inputHandler() {
         const dataSlice = data.items.slice(0, 5); //лимитируем список подсказок
 
         dataSlice.forEach((repo) => {
-          console.log(repo)
           const item = document.createElement("li"); //coздаем DOM элемент списка
           item.textContent = repo.name; //имя репозитория вставляеем текстом
           additionsList.appendChild(item); //добавляем элемент в DOM
