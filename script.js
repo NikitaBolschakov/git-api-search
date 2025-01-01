@@ -20,9 +20,9 @@ async function inputHandler() {
         const dataSlice = data.items.slice(0, 5); //лимитируем список подсказок
 
         dataSlice.forEach((repo) => {
+          console.log(repo)
           const item = document.createElement("li"); //coздаем DOM элемент списка
-          item.textContent = repo.full_name; //имя репозитория вставляеем текстом
-          item.dataset.repoUrl = repo.html_url;
+          item.textContent = repo.name; //имя репозитория вставляеем текстом
           additionsList.appendChild(item); //добавляем элемент в DOM
 
           //слушатель на подсказке
@@ -49,7 +49,7 @@ function addRepo(repo) {
   li.insertAdjacentHTML(
     "afterbegin",
     `<div class="repo">
-      <div class="text">Name: ${repo.full_name}<br>Owner: ${repo.owner.login}<br>Stars: ${repo.stargazers_count}</div>
+      <div class="text">Name: ${repo.name}<br>Owner: ${repo.owner.login}<br>Stars: ${repo.stargazers_count}</div>
       <button class="remove-btn">Удалить</button>
     </div>`
   );
